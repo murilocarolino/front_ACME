@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./logar.js" defer></script>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<style>
+
+    .login-title {
+        font-family: 'Roboto', sans-serif;
+        margin-top: -150px;
+    }
+
+</style>
+</head>
+
+<body class="bg-marrom flex justify-center items-center h-screen">
+    <div class="sm:w-4/5 bg-gray-500 ">
+        <h1 class="login-title text-2xl font-bold mb-4 text-center text-branco">Entrar</h1>
+        <div class="bg-vermelho p-10 rounded shadow-md">
+            <form>
+    
+        <form>
+            <div class="mb-4">
+                <h2 class=" text-2xl font-medium mb-4 text-left text-branco">Você já tem conta na Cineart?</h2>
+                <label for="email" class="block text-gray-300 text-sm font-bold mb-2"></label>
+                <input type="email" id="email" name="email" class="w-full border-solid border-2 border-marrom rounded-md placeholder:p-5 pt-2 pb-2" placeholder="Endereço de email" required>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-gray-300 text-sm font-bold mb-2"></label>
+                <input type="password" id="password" name="password" class="w-full border-solid border-2 border-marrom rounded-md placeholder:p-5 pt-2 pb-2" placeholder="Sua senha" required>
+            </div>
+            <div class="w-2/12 flex items-center justify-center">
+                <div class="flex items-center justify-between">
+                    <button type="submit" class="bg-marrom pr-4 text-branco py-2 px-4 rounded">
+                        <div class="inputLogar">
+                            <input type="submit" onclick="logar(); return false" class="enviar">
+                        </div>
+                </div>
+                <h3 class=" text-1x5 p-5 pr-3 text-left text-branco">Esqueceu a senha?</h3>
+            </div>
+            <hr class="mt-4">
+        </form>
+    </div>
+    <h3 class=" text-1x5 mb-4 text-center font-medium text-branco">Precisa de ajuda para entrar?</h3>
+</body>
+</html>
