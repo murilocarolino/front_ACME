@@ -31,7 +31,7 @@ async function preencherContainerFilme () {
         'gap-y-10',
     ),
     card.addEventListener('click',()=> {
-        window.location.href='../sobre.html?id='+filme.id
+        window.location.href='./sobre.html?id='+filme.id
     })
 
 
