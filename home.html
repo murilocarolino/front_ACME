@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Niramit:wght@600&display=swap" rel="stylesheet">
+    <script src="./src/js/main.js" type="module" defer></script>
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+        theme: {
+    colors:{
+      'marrom':'#470000',
+      'vermelho':'#8E0000',
+      'branco':'#FFFFFF',
+      'rosa':'#DE0000'
+    },
+    extend: {
+      fontFamily: {
+        'Niramit': ['Niramit', 'sans-serif']
+      },
+      spacing: {
+        '100': '10rem',
+        '250': '15rem'
+      }
+    },
+  }
+}
+  </script>
+    <title>Acme</title>
+</head>
+
+
+<body class="bg-marrom h-screen ">
+    <header class="bg-rosa p-10 w-full h-12 ">
+        <p class="absolute font-Niramit text-branco text-4xl top-[22px]">Acme</p>
+    </header>
+
+    <main class="flex flex-col p-10 " id="main">
+
+        <p class="text-branco font-medium text-xl ">Filmes</p>
+        <div id="containerFilme" class=" flex-wrap overflow-x-auto scrollbar flex flex-row gap-4 p-10"></div>
+
+    </main>
+</body>
+
+</html>
