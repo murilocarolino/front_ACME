@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Niramit:wght@600&display=swap" rel="stylesheet">
+    <link href="../src/output.css" rel="stylesheet">
+    <script src="./src/js/cms.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-[#470000] h-screen ">
+    <header class="p-10 w-full h-12 ">
+        <p class="font-Niramit text-[#FFFFFF] text-4xl">Acme</p>
+    </header>
+
+    <main class="bg-[#DE0000] flex flex-row h-4/5 w-96 ml-10 mt-10 rounded-md" id="main">
+
+        <div class="formulario flex flex-col">
+
+            <p class="bg-[#8E0000] font-medium rounded-md text-xl text-[#FFFFFF] h-16 w-full">Dashboard</p>
+
+            <form class="flex flex-col text-[#FFFFFF] mt-2 ml-8 mr-8">
+                <label class="" for="nome">Nome do Filme*:</label> <br>
+                <input class="bg-[#8E0000] rounded-md h-10" type="text" id="nome" name="nome"> <br>
+
+                <label for="nome">Sinopse*:</label> <br>
+                <input class="bg-[#8E0000] rounded-md h-10" type="text" id="nome" name="nome"> <br>
+
+                <label for="nome">Duração*:</label> <br>
+                <input class="bg-[#8E0000] rounded-md h-10" type="number" id="nome" name="nome"> <br>
+
+                <label for="nome">Data de Lançamento*:</label> <br>
+                <input class="bg-[#8E0000] rounded-md h-10" type="date" id="nome" name="nome"> <br>
+
+                <label for="nome">Data de Relançamento:</label> <br>
+                <input class="bg-[#8E0000] rounded-md h-10" type="date" id="nome" name="nome"> <br>
+
+                <label for="nome">Valor*:</label> <br>
+                <input class="bg-[#8E0000] rounded-md h-10" type="number" id="nome" name="nome"> <br>
+            </form>
+
+            <button type="submit"
+                class="flex w-72 ml-12 border-2 justify-center rounded-md bg-[#8E0000] py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-black">Adicionar Filme</button>
+
+        </div>
+        <div class="tabela ml-36 w-auto bg-white rounded-lg">
+            <table class="table-fixed border-collapse rounded-lg">
+                <thead class="border-b border-black">
+                    <tr>
+                        <th class="px-16 py-2 rounded-tl-lg">ID</th>
+                        <th class="px-16 py-2">Nome do Filme</th>
+                        <th class="px-16 py-2">Data de Lançamento</th>
+                        <th class="px-16 py-2">Duração</th>
+                        <th class="px-16 py-2">Preço</th>
+                        <th class="px-16 py-2">Editar</th>
+                        <th class="px-16 py-2 rounded-tr-lg">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody id="tbl_filme" class="divide-y divide-gray-200">
+                    <!-- As linhas da tabela serão adicionadas aqui -->
+                </tbody>
+            </table>
+        </div>
+
+
+    </main>
+</body>
+
+</html>
